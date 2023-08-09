@@ -1,0 +1,21 @@
+.checkout-container {
+    position: relative;
+
+    .body-page {
+        display: flex;
+        padding: 0 277px;
+        margin-top: 40px;
+
+        .left-section {
+            flex: 0 0 65%;
+        }
+
+        .middle-section {
+            flex: 0 0 3%;
+        }
+
+        .right-section {
+            flex: 0 0 32%;
+        }
+    }
+}

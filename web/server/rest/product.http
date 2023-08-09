@@ -1,0 +1,37 @@
+@url=http://localhost:5000
+@api=api/v1
+
+GET {{url}}/{{api}}/product/64858cfacf6f99fe8e5335d3
+
+###
+GET {{url}}/{{api}}/product/products
+
+###
+POST {{url}}/{{api}}/product/create-product
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NDhlY2M0ODNlODhmZmFjYzMzYzdjOGUiLCJ1c2VyUm9sZSI6InVzZXIiLCJpYXQiOjE2ODcwODAwNTIsImV4cCI6MTY4NzA4MDk1Mn0.B0OjExY5SM8NZWfD1GlKSwUQLGmDsvkBeq74dTL2M-A
+
+{
+    "name": "Iphone 10",
+    "price": 999.00,
+    "brand": "apple",
+    "desc": "apple iphone 14",
+    "item": 123,
+    "image": [
+        "https://down-vn.img.susercontent.com/file/93b3f6d4799b06f9279f817540daa4d1",
+        "https://down-vn.img.susercontent.com/file/93b3f6d4799b06f9279f817540daa4d1",
+        "https://down-vn.img.susercontent.com/file/93b3f6d4799b06f9279f817540daa4d1",
+        "https://down-vn.img.susercontent.com/file/93b3f6d4799b06f9279f817540daa4d1"
+    ]
+}
+
+###
+PUT {{url}}/{{api}}/product/64858cfacf6f99fe8e5335d3
+Content-Type: application/json
+
+{
+    "name": "iphone 12"
+}
+
+###
+DELETE {{url}}/{{api}}/product/64858cfacf6f99fe8e5335d3

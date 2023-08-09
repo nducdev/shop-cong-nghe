@@ -1,0 +1,42 @@
+.product-detail-container {
+    .product-overview {
+        display: flex;
+        padding: 0 277px;
+        margin-top: 40px;
+
+        .right-section {
+            flex: 0 0 45%;
+        }
+
+        .middle-section {
+            flex: 0 0 10%;
+        }
+
+        .left-section {
+            flex: 0 0 45%;
+        }
+    }
+
+    .product-specification {
+        display: flex;
+        margin-top: 40px;
+        padding: 0 277px;
+
+        .left-section {
+            flex: 0 0 75%;
+            border: 1px solid #ccc;
+            height: 100%;
+        }
+
+        .middle-section {
+            flex: 0 0 3%;
+        }
+
+        .right-section {
+            flex: 0 0 22%;
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    }
+}

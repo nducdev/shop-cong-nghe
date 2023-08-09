@@ -1,0 +1,88 @@
+.user-container {
+    .user-content {
+        display: flex;
+        padding: 0 277px;
+        margin-top: 30px;
+
+        .left-section {
+            flex: 0 0 21%;
+
+            .user-profile {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    border: 1px solid #ccc;
+                }
+
+                .user-info {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 15px;
+
+                    span {
+                        line-height: 1.7;
+                    }
+
+                    span:first-child {
+                        display: flex;
+                        font-weight: 500;
+                    }
+
+                    span:last-child {
+                        display: flex;
+                        align-items: center;
+                        font-weight: normal;
+                        color: #888;
+
+                        .icon {
+                            display: flex;
+                            margin-right: 3px;
+                        }
+                    }
+                }
+            }
+
+            .user-option {
+                margin-top: 50px;
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    font-size: 17px;
+                    font-weight: 500;
+
+                    .icon {
+                        margin-right: 5px;
+                    }
+                }
+
+                .list-option {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 28px;
+                    margin-top: 15px;
+
+                    span {
+                        font-size: 16px;
+                        font-weight: normal;
+                        color: rgba(0, 0, 0, 0.65);
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        .middle-section {
+            flex: 0 0 3%;
+        }
+
+        .right-section {
+            flex: 0 0 76%;
+        }
+    }
+}

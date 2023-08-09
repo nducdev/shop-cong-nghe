@@ -1,0 +1,28 @@
+.product-pv-card-container {
+    display: flex;
+    flex-direction: column;
+
+    .card-header {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 90%;
+        }
+    }
+
+    .card-footer {
+        display: flex;
+        padding: 0 30px;
+        flex-direction: column;
+
+        span:first-child {
+            font-size: 20px;
+        }
+
+        span:last-child {
+            font-size: 18px;
+            color: red;
+        }
+    }
+}

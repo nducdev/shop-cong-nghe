@@ -1,0 +1,147 @@
+.datatable {
+    height: 600px;
+    padding: 20px;
+    margin-top: 50px;
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .styled-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 400px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        thead {
+            background-color: #009879;
+        }
+
+        td {
+            font-size: 15px;
+        }
+
+        select {
+            display: flex;
+            border: none;
+            background-color: transparent;
+            font-size: 15px;
+        }
+
+        td:nth-child(2) {
+            display: inline-flex;
+            align-items: center;
+
+            img {
+                display: flex;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 10px;
+            }
+        }
+
+        td:last-child {
+            display: flex;
+
+            button {
+                display: block;
+                outline: none;
+                padding: 5px 10px;
+                background-color: transparent;
+                border-radius: 7px;
+                cursor: pointer;
+            }
+
+            a {
+                text-decoration: none;
+                color: #7bd07b;
+            }
+
+            .view-btn {
+                margin-right: 10px;
+                color: #7bd07b;
+                border: 1px solid #7bd07b;
+            }
+
+            .delete-btn {
+                color: #eb5a5a;
+                border: 1px solid #eb5a5a;
+            }
+        }
+    }
+
+    .styled-table thead tr {
+        color: #ffffff;
+        text-align: left;
+    }
+
+    .styled-table th,
+    .styled-table td {
+        padding: 12px 15px;
+    }
+
+    .styled-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .styled-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+
+    .styled-table tbody tr.active-row {
+        font-weight: bold;
+        color: #009879;
+    }
+
+    .pagination-btn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 40px;
+        margin-right: 40px;
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .add-new {
+            display: flex;
+            align-items: center;
+            padding: 8px 15px;
+            background-color: transparent;
+            border-radius: 8px;
+            border: 1px solid #333;
+            margin-right: 30px;
+            color: #333;
+            cursor: pointer;
+
+            .icon {
+                display: flex;
+                margin-right: 5px;
+            }
+
+            span {
+                display: flex;
+                font-size: 16px;
+            }
+        }
+
+        .icon {
+            display: flex;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+
+            &:last-child {
+                margin-left: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@url=http://localhost:5000
+@api=api/v1
+
+###
+POST {{url}}/{{api}}/auth/register
+Content-Type: application/json
+
+{
+    "username": "nducdev2",
+    "password": "password",
+    "email": "manhduc1@gmail.com",
+    "name": "Duc Nguyen",
+    "phone": "096252661"
+}
+
+###
+POST {{url}}/{{api}}/auth/login
+Content-Type: application/json
+
+{
+    "password": "password",
+    "username": "ducnguyen"
+}
+
+###
+POST {{url}}/{{api}}/auth/google
+Content-Type: application/json
+
+{
+    "access_token": "ya29.a0Ael9sCMXhUdB_HdE4iVK-nA54IpKiAjWnlnBApmqvIKk9XzgFXpQcKkzQu7MaW5o1zETbZhgqU7QxSWc6KX9QnDoti3onKGa0DfJvJvusU427FlC4x1sEieRHIaNyG_0NnmaLKfX8xADCvEvP0GvouWWWaKVaCgYKAX4SARASFQF4udJhMm850cWdohw1JbtjBLiwnA0163"
+}
+
+###
+POST {{url}}/{{api}}/auth/logout
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NDhkY2IyNDFjMmY1NzY3NzhmM2U4MTkiLCJ1c2VyUm9sZSI6InVzZXIiLCJpYXQiOjE2ODcwMTQxODcsImV4cCI6MTY4NzAxNTA4N30.DrFvG_OiSDd72-DnlgYyy0fhZhfxfNmx9cCvYvLhHNA
+
+###
+GET {{url}}/{{api}}/auth/loggedin
+
+###
+POST {{url}}/{{api}}/auth/loginAdmin
+Content-Type: application/json
+
+{
+    "username": "nducdev",
+    "password": "password"
+}

@@ -1,0 +1,161 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+    width: 100%;
+    padding: 0 277px;
+    user-select: none;
+
+    .logo-section {
+        display: flex;
+        align-items: center;
+        // margin-right: 70px;
+        cursor: pointer;
+
+        img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        span {
+            font-size: 27px;
+            font-weight: 500;
+            color: #0c3e29;
+        }
+    }
+
+    .list-section {
+        display: flex;
+
+        .item {
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-right: 60px;
+            }
+        }
+    }
+
+    .user-section {
+        display: flex;
+        align-items: center;
+
+        .search-section {
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            input {
+                width: 350px;
+                outline: none;
+                border: 1px solid #cccccc;
+                font-size: 15px;
+                line-height: 1.42857143;
+                padding: 10px 20px;
+                border-radius: 30px;
+                color: #333;
+                transition: all 100ms ease;
+
+                &:focus {
+                    border-color: #3898ec;
+                }
+            }
+
+            .icon {
+                display: flex;
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .account-section,
+        .cart-section {
+            display: flex;
+            align-items: center;
+            margin-left: 50px;
+            cursor: pointer;
+
+            span {
+                margin-left: 10px;
+                font-size: 18px;
+            }
+        }
+
+        .cart-section {
+            .icon {
+                display: flex;
+                position: relative;
+
+                .number-count {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: -40%;
+                    right: -40%;
+                    background-color: rgb(226, 72, 72);
+                    color: #fff;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+
+                    span {
+                        display: flex;
+                        margin: 0;
+                        line-height: 1;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+        .account-section {
+            position: relative;
+
+            .user-profile {
+                display: flex;
+                align-items: center;
+
+                .user-ava {
+                    display: flex;
+
+                    img {
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+
+                .user-name {
+                    display: flex;
+                }
+            }
+
+            .local-account {
+                display: flex;
+                align-items: center;
+            }
+
+            .profile-menu {
+                position: absolute;
+                width: 150px;
+                top: 70px;
+                background-color: #fff;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                z-index: 9999;
+
+                .profile-option {
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+}

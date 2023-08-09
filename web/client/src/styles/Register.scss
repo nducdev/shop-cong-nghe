@@ -1,0 +1,79 @@
+.register-container {
+    padding: 50px 70px;
+
+    .register-header {
+        margin-bottom: 20px;
+
+        span:first-child {
+            display: block;
+            font-weight: bold;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .double-field {
+        display: flex;
+
+        .text-field {
+            &:first-child {
+                margin-right: 10px;
+            }
+            &:last-child {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .text-field {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+
+        label {
+            color: #aaa;
+            font-size: 19px;
+            margin-bottom: 15px;
+        }
+
+        input {
+            border-radius: 7px;
+            border: #ddd solid 2px;
+            padding: 10px 20px;
+            outline: none;
+            font-size: 17px;
+            color: #555;
+        }
+    }
+
+    button {
+        width: 100%;
+        height: 60px;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        background-color: #8b82fc;
+        color: #fff;
+        font-size: 17px;
+        user-select: none;
+        cursor: pointer;
+    }
+
+    .register-footer {
+        .redirect-link {
+            font-size: 18px;
+            margin-top: 50px;
+            user-select: none;
+
+            span:first-child {
+                color: #aaa;
+            }
+
+            span:last-child {
+                margin-left: 8px;
+                color: #8b82fc;
+                cursor: pointer;
+            }
+        }
+    }
+}

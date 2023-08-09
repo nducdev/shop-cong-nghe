@@ -1,0 +1,233 @@
+.product-summery-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 10px;
+
+    .summery-header {
+        display: flex;
+        font-size: 26px;
+        font-weight: 500;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    .summery-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+
+        .coupon-code {
+            position: relative;
+            width: 100%;
+
+            input {
+                padding: 15px 30px;
+                background-color: #f8f7f8;
+                width: 100%;
+                border-radius: 50px;
+                outline: none;
+            }
+
+            button {
+                position: absolute;
+                display: flex;
+                top: 50%;
+                right: -15%;
+                transform: translate(-50%, -50%);
+                outline: none;
+                padding: 8px 20px;
+                font-size: 15px;
+                background-color: #0f4630;
+                color: #f8f7f8;
+                border-radius: 50px;
+            }
+        }
+
+        .payment-detail {
+            border-top: 1px solid #ccc;
+            margin-top: 30px;
+            padding-top: 30px;
+
+            span {
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .payment-option {
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+
+                .input-wrapper {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+
+                    input[type='radio'] {
+                        display: flex;
+                        margin-right: 10px;
+                        transform: scale(1.3);
+                        cursor: pointer;
+                    }
+
+                    label {
+                        font-size: 17px;
+                        display: flex;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .total-cost {
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+
+            .list-cost {
+                padding-bottom: 25px;
+                border-bottom: 1px solid #ccc;
+
+                .cost-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-size: 17px;
+
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+
+                    span:first-child {
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .total {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 20px;
+
+                span {
+                    font-size: 17px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .payment-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0f4630;
+            color: #f8f7f8;
+            border-radius: 30px;
+            padding: 15px 20px;
+            margin-top: 25px;
+            font-size: 18px;
+            width: 100%;
+        }
+
+        .pay-via-card {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+
+            .pay-header {
+                display: flex;
+                align-items: center;
+
+                .block-payment {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #d3d2d2;
+                    border-radius: 5px;
+                    min-height: 40px;
+                    min-width: 58px;
+                    cursor: pointer;
+                    user-select: none;
+
+                    &:not(:last-child) {
+                        margin-right: 10px;
+                    }
+
+                    &.active {
+                        border: 2px solid #aad5a9;
+                        border-radius: 5px;
+                    }
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            .pay-content {
+                display: flex;
+                flex-direction: column;
+                margin-top: 25px;
+
+                .pay-field {
+                    .text-field {
+                        display: flex;
+                        flex-direction: column;
+
+                        &:not(:last-child) {
+                            margin-bottom: 20px;
+                        }
+
+                        label {
+                            font-size: 17px;
+                            margin-bottom: 12px;
+                        }
+
+                        input {
+                            border: 1px solid #ccc;
+                            padding: 14px 17px;
+                            font-size: 17px;
+                            border-radius: 7px;
+                        }
+                    }
+
+                    .double-field {
+                        display: flex;
+                        width: 100%;
+
+                        .text-field {
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+
+                            &:first-child {
+                                margin-right: 7px;
+                            }
+
+                            &:last-child {
+                                margin-left: 7px;
+                            }
+
+                            label {
+                                font-size: 17px;
+                                margin-bottom: 12px;
+                            }
+
+                            input {
+                                border: 1px solid #ccc;
+                                padding: 14px 17px;
+                                font-size: 17px;
+                                border-radius: 7px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

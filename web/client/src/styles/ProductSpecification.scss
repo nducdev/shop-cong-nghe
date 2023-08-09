@@ -1,0 +1,23 @@
+.product-specification-container {
+    display: flex;
+    width: 100%;
+
+    .product-info {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        width: 100%;
+        padding: 30px;
+
+        span {
+            display: flex;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .detail-text {
+            margin-top: 20px;
+            white-space: pre-wrap;
+        }
+    }
+}

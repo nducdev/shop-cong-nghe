@@ -1,0 +1,39 @@
+.cart-container {
+    .cart-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        span {
+            font-size: 20px;
+        }
+
+        .cart-input {
+            display: flex;
+            position: relative;
+
+            input {
+                display: flex;
+                width: 400px;
+                padding: 8px 30px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+            }
+
+            .icon {
+                display: flex;
+                position: absolute;
+                top: 50%;
+                left: 20px;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    .no-cart-container {
+        span {
+            font-size: 18px;
+            color: gray;
+        }
+    }
+}

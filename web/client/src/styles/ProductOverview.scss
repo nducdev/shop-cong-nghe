@@ -1,0 +1,197 @@
+.product-review {
+    .item-review {
+        display: flex;
+        border: 1px solid #cccccc;
+        flex-direction: column;
+        padding: 30px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+        span {
+            font-size: 26px;
+            font-weight: 500;
+        }
+
+        .product-detail {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .left-content {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 220px;
+                }
+
+                .product-info {
+                    display: flex;
+                    margin-left: 15px;
+
+                    span {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            .right-content {
+                display: flex;
+                flex-direction: column;
+
+                span:first-child {
+                    text-align: right;
+                    font-size: 23px;
+                }
+
+                span:last-child {
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .check-customer {
+        display: flex;
+        align-items: center;
+        cursor: default;
+
+        label {
+            user-select: none;
+        }
+
+        input[type='checkbox'] {
+            display: none;
+        }
+
+        /* Style the custom checkbox */
+        input[type='checkbox'] + label {
+            display: flex;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        /* Create the checkmark */
+        input[type='checkbox'] + label:before {
+            content: '';
+            display: flex;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        input[type='checkbox']:checked + label:before {
+            background-color: #2196f3;
+            border: 1px solid #2196f3;
+        }
+
+        input[type='checkbox'] + label:after {
+            content: '\2714';
+            display: flex;
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            color: #fff;
+            font-size: 14px;
+            line-height: 16px;
+            opacity: 0;
+        }
+
+        input[type='checkbox']:checked + label:after {
+            opacity: 1;
+        }
+    }
+
+    .delivery-info {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        border: 1px solid #cccccc;
+        padding: 30px;
+
+        .delivery-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            span {
+                font-size: 26px;
+                font-weight: 500;
+            }
+
+            .info-save-btn {
+                font-size: 14px;
+                background-color: #eeeff0;
+                padding: 5px 10px;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .delivery-body {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+
+            .double-field {
+                display: flex;
+                margin-top: 20px;
+
+                .text-field {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                    &:first-child {
+                        margin-right: 15px;
+                    }
+
+                    &:last-child {
+                        margin-left: 15px;
+                    }
+
+                    label {
+                        font-size: 17px;
+                        margin-bottom: 10px;
+                    }
+
+                    input {
+                        padding: 18px;
+                        border: 1px solid #ccc;
+                        border-radius: 7px;
+                        font-size: 17px;
+                    }
+                }
+            }
+
+            .single-field {
+                display: flex;
+                margin-top: 20px;
+
+                .text-field {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                    label {
+                        font-size: 17px;
+                        margin-bottom: 10px;
+                    }
+                    input {
+                        padding: 18px;
+                        border: 1px solid #ccc;
+                        border-radius: 7px;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}

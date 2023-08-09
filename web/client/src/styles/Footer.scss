@@ -1,0 +1,149 @@
+.footer-container {
+    margin-top: 100px;
+    padding: 0 277px;
+
+    .top-section {
+        display: flex;
+        border-top: 1px solid #d3d2d2;
+        padding: 60px 0;
+
+        .right-section {
+            flex: 0 0 35%;
+
+            .logo-section {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 10px;
+                }
+
+                span {
+                    font-size: 25px;
+                    color: #0c3e29;
+                    font-weight: 500;
+                }
+            }
+
+            .text {
+                display: flex;
+                margin-top: 35px;
+
+                span {
+                    color: #231f1e;
+                    line-height: 1.5;
+                }
+            }
+
+            .payment-section {
+                margin-top: 50px;
+
+                span {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+
+                .list-payment {
+                    display: grid;
+                    grid-template-columns: repeat(4, 58px);
+                    column-gap: 6px;
+                    row-gap: 10px;
+                    margin-top: 30px;
+
+                    .block-payment {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid #d3d2d2;
+                        border-radius: 5px;
+                        min-height: 40px;
+                        min-width: 58px;
+
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .left-section {
+            flex: 0 0 65%;
+            margin-left: 60px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            .list {
+                display: flex;
+                flex-direction: column;
+                color: #000;
+                font-size: 20px;
+                font-weight: 500;
+
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 35px;
+
+                    span {
+                        color: #231f1e;
+                        font-size: 16px;
+                        line-height: 2;
+                        font-weight: 400;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 0;
+        border-top: 1px solid #d3d2d2;
+
+        .left-section {
+            display: flex;
+            align-items: center;
+
+            .item {
+                display: flex;
+                align-items: center;
+                margin-right: 50px;
+
+                .icon {
+                    margin-right: 10px;
+                }
+
+                span {
+                    color: #333;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .middle-section {
+            display: flex;
+            align-items: center;
+
+            span {
+                color: #333;
+                font-weight: 500;
+                margin-right: 50px;
+            }
+        }
+
+        .right-section {
+            display: flex;
+
+            spam {
+                color: #333;
+                font-weight: 500;
+            }
+        }
+    }
+}

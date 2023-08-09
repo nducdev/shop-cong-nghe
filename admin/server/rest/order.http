@@ -1,0 +1,12 @@
+POST http://localhost:5000/api/v1/order/create-order
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NDhmMDZjM2IxOGQxMDBlOGZkM2IxMWUiLCJ1c2VyUm9sZSI6ImFkbWluIiwiaWF0IjoxNjg3NDUzOTQxLCJleHAiOjE2ODc0NTQ4NDF9.GFSBjAhmSAnSUxayuIcgyc5hkJuxCSIPWOkN-nhcCms
+
+{
+    "userID":"648f06c3b18d100e8fd3b11e",
+    "deliveryID":"64948071180cfbf4637e64c4",
+    "name":"Iphone 10",
+    "price":999,
+    "quantity":1,
+    "pay_method":"cash on delivery"
+}
